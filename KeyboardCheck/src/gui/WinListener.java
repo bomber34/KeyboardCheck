@@ -5,6 +5,9 @@ import java.awt.event.WindowListener;
 
 import javax.swing.JFrame;
 
+/**
+ * WindowListener is used for extra JFrames like the "known issues" one.
+ */
 public class WinListener implements WindowListener {
 
 	private JFrame mainWin;

@@ -3,7 +3,9 @@ package gui;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-
+/**
+ *	main class to set up the jframe and its components
+ */
 public class KeyboardCheck {
 
 	private final JFrame window;

@@ -14,6 +14,9 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
+/**
+ *	Adds menubar to the mainframe 
+ */
 public class WindowMenuBar implements ActionListener {
 
 	private JFrame window;
@@ -71,12 +74,12 @@ public class WindowMenuBar implements ActionListener {
 			infoWindow.addWindowListener(winListener);
 			
 			JPanel textPan = new JPanel();
-			JLabel hint = new JLabel("<html>Following keys have issues:<br><br>ALT GR:<br>    activates CTRL and ALT, "
-					+ "because Windows doesn't recognize ALT GR as a single key <br> but rather as CTRL+ALT at the same time."
-					+ "<br><br>"
-					+ "FN:<br>    Java can't recognize the FN key at all. Test functions instead."
+			JLabel hint = new JLabel("<html>Following keys have issues:<br><br>Left Control:<br>	"
+					+"Key is only recognized when released, due to ALTGR activating it when pressed"
 					+ "<br><br>"
 					+ "PrintScreen:<br>    Key is only recognized when released."
+					+ "<br><br>"
+					+ "FN:<br>    Java can't recognize the FN key at all. Test functions instead."
 					+ "<br><br>"
 					+ "Refreshing keyboard with ALT+Q:<br>    Key combo must be released together."
 					+ "<br><br>"
